@@ -1,9 +1,16 @@
 window.onload = function () {
-    var loading = document.getElementById('loading');
+    //get ID EL
+    function $(id) {
+        return document.getElementById(id);
+    }
+
+    //Befor ready
+    var loading = $('loading');
     loading.style.display = 'none';
 
-    var add = document.getElementById('add'),
-        oldImg = document.getElementById('images').getElementsByTagName('img');
+    //'Never Stop' animation
+    var add = $('add'),
+        oldImg = $('images').getElementsByTagName('img');
 
     img = function img (el, x, y) {
         var d = document.createElement('div'),
@@ -30,5 +37,30 @@ window.onload = function () {
         img(el, 1, 0);
         img(el, 0, 1);
         img(el, 1, 1);
+    }
+  
+    //nav highlight
+    var navLis = $('nav-list').children;
+    for(var i = 0, len = navLis.length; i < len; i++) {
+        navLis[i].onclick = function () {
+            for(var j = 0; j < len; j++){
+                navLis[j].className = '';
+            }
+            this.className = 'active';
+        }
+    }
+
+    $('main').onscroll = function () {
+        var scrollTop = $('main').scrollTop;
+            mainChild = $('main').children;
+        for(var i = 0, len = mainChild.length; i < len; i++){
+            if (scrollTop + 100 >= mainChild[i].offsetTop) {
+                console.log('scroll:'+scrollTop+'i:'+i+'offset:'+mainChild[i].offsetTop);
+                for (var j = 1; j < len+1; j++) {
+                    navLis[j].className = '';
+                }
+                navLis[i+1].className = 'active';
+            }
+        }
     }
 }
