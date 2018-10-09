@@ -121,7 +121,7 @@ body {
 
 /* * * * * * * * * * * **
 *      download btn     *
-* * * * * * * * * * * */
+* * * * * * * * * * * 
 .download {
     position: absolute;
     top: 0;
@@ -133,7 +133,7 @@ body {
     top: 2px;
     opacity: 0.8;
 }
-
+*/
 /* * * * * * * * * * * **
 *      container        *
 * * * * * * * * * * * */ 
@@ -358,10 +358,6 @@ body {
     padding-right: 5px;
 }
 
-.img-pad {
-    padding-bottom: 80px;
-}
-
 .body-ct li {
     width: 50%;
     margin: 10px 0 10px 80px;;
@@ -433,7 +429,7 @@ body {
     height: 230px;
 }
 
-.work-ct .taobao {
+.work-ct .static {
     width: 530px;
     height: 260px;
     border: 1px solid #ccc;

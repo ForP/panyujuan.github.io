@@ -54,7 +54,7 @@ window.onload = function () {
         var scrollTop = $('main').scrollTop;
             mainChild = $('main').children;
         for(var i = 0, len = mainChild.length; i < len; i++){
-            if (scrollTop + 100 >= mainChild[i].offsetTop) {
+            if (scrollTop + 300 >= mainChild[i].offsetTop) {
                 console.log('scroll:'+scrollTop+'i:'+i+'offset:'+mainChild[i].offsetTop);
                 for (var j = 0; j < len; j++) {
                     //navLis[0].className = '';
