@@ -1,0 +1,97 @@
+/* reseted CSS */
+body, div, span, p, img,
+form, input, select, textarea, button, fieldset, legend,
+table, th, td,
+ul, ol, li, dl, dt, dd,
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, main, section, aside{ display: block; }
+
+ul, ol, li { list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+input, select, textarea, button{ 
+    vertical-align: middle; 
+    border: 1px solid #ccc;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clear::after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.clear { *zoom: 1;}
+
+body {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 1190px;
+    height: auto;
+}
+
+.head-ad { background-color: #f5ceb1;}
+
+.head-nav {
+    border-bottom: 1px solid #ddd; 
+}
+
+.head-nav .fl,
+.head-nav .fr li {
+    float: left;
+}
+
+.head-nav .fl {
+    margin-left: 200px;
+}
+
+.head-nav .fr {
+    float: right;
+}
+
+.dropdown-layer {
+    width: 300px;
+    display: none;
+}
+
+/*logo-search*/
+.main-search {
+    position: relative;
+    height: 140px;
+}
+
+/*main-ad*/
+.main-ad {
+    position: relative;
+    height: 480px;
+}
+
+/*main-seckill*/
+.main-seckill {
+    margin-top: 25px;
+}
